@@ -1,0 +1,17 @@
+{
+  "name": "vue-lazy-render",
+  "version": "1.0.0",
+  "description": "lazy render component from vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue-lazy-render"
+  ],
+  "author": {
+    "name": "Hefty",
+    "email": "yeyuqiudeng@gmail.com"
+  },
+  "license": "MIT"
+}
