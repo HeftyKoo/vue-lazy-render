@@ -1,14 +1,44 @@
 {
   "name": "vue-lazy-render",
-  "version": "1.0.0",
+  "version": "1.0.12",
   "description": "lazy render component from vue",
-  "main": "index.js",
+  "main": "dist/build.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mb": "export PRODUCTION=1 && webpack --progress --hide-modules",
+    "wb": "set PRODUCTION=1 && webpack --progress --hide-modules"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yeyuqiudeng/vue-lazy-render.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yeyuqiudeng/vue-lazy-render/issues"
+  },
+  "homepage": "https://github.com/yeyuqiudeng/vue-lazy-render#readme",
   "keywords": [
     "vue-lazy-render"
   ],
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel-core": "^6.18.0",
+    "babel-loader": "^6.2.7",
+    "babel-plugin-component": "^0.5.1",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "babel-runtime": "^6.18.0",
+    "css-loader": "^0.25.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "postcss-loader": "^1.1.1",
+    "style-loader": "^0.13.1",
+    "vue-hot-reload-api": "^2.0.6",
+    "vue-html-loader": "^1.2.3",
+    "vue-loader": "^9.9.5",
+    "vue-style-loader": "^1.0.0",
+    "webpack": "^1.13.3"
+  },
   "author": {
     "name": "Hefty",
     "email": "yeyuqiudeng@gmail.com"
