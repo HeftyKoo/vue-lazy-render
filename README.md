@@ -30,9 +30,9 @@ Vue组件,用于Vue组件的延迟渲染,改善初次进入页面或者数据量
 |immediately|是否立即开启延迟渲染,vue-lazy-render组件会在路由切换时,会进行一次延迟渲染,如果在同一个路由中需经常对某个组件进行延迟渲染,可以将immediately由false设为true,就会马上开启一次延迟渲染|Boolean|--|false|
 |data|如果需要延迟加载的组件是由数组渲染的,可以将数据的数据prop进vue-lazy-render组件,组件会根据配置监测数组变化,决定开启延迟加载的时机|array|--|false|
 |trackByData|是否根据data的变化来开启延迟加载,如果设为true,需将data prop进来,并且路由切换时不会再进行延迟渲染|Boolean|--|false|
-|limit|在数据超过多少后才开启延迟渲染,需要data和将trackByData设为true|Boolean|--|false|
+|limit|在数据超过多少后才开启延迟渲染,需要data和将trackByData设为true|Number|30|false|
 |maskClass|等待渲染时的遮罩层样式|String|--|false|
-|tip|等待渲染时的提示文字|String|--|false|
+|tip|等待渲染时的提示文字|String|正在渲染,请稍候|false|
 
 ## Events
 | name      | description |params|
