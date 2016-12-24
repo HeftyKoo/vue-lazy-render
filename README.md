@@ -52,4 +52,8 @@ Vue组件,用于Vue组件的延迟渲染,改善初次进入页面或者数据量
         <my-component :data="myArray"></my-component>
     </lazy-render>
 
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
+
 
