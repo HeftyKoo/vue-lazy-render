@@ -34,6 +34,12 @@ Vue组件,用于Vue组件的延迟渲染,改善初次进入页面或者数据量
 |maskClass|等待渲染时的遮罩层样式|String|--|false|
 |tip|等待渲染时的提示文字|String|--|false|
 
+## Events
+| name      | description |params|
+| -------|:--------:|-------:|
+| loaded |延迟渲染完成后的回调|--|
+
+
 ## Example
 
 ### 基础用法
