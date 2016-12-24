@@ -1,6 +1,6 @@
 {
   "name": "vue-lazy-render",
-  "version": "1.0.12",
+  "version": "1.0.14",
   "description": "lazy render component from vue",
   "main": "dist/build.js",
   "scripts": {
