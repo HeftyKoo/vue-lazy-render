@@ -1,7 +1,7 @@
 <template>
     <div class="lazy-load">
         <slot v-if="show"></slot>
-        <div v-if="!show" :class="[maskClass ? maskClass : 'lazy-load-mask']"></div>
+        <div v-if="!show" :class="[maskClass ? maskClass : 'lazy-load-mask']">{{tip}}</div>
     </div>
 </template>
 
@@ -12,18 +12,20 @@
     }
     .lazy-load-mask {
         position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 32px;
-        height: 32px;
-        background: url('image/loading.gif');
-        transform: translate(-50%,-50%);
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        line-height: 24px;
     }
 </style>
 
 <script type="text/babel">
     export default {
-        name: 'Lazy',
+        name: 'LazyRender',
         data() {
             return {
                 show: true, // 是否渲染组件
@@ -32,6 +34,12 @@
         props: {
             data: Array,  // 需要在组件内渲染的数据
             maskClass: String, // 遮罩层样式
+            tip: {
+                type: String,
+                default() {
+                    return '正在渲染,请稍候'
+                }
+            },
             time: { // 延迟渲染的时间
                 type: Number,
                 default() {
