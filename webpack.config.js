@@ -12,7 +12,22 @@ if (folder_exists) {
     console.log("clearing " + buildPath)
 }
 
-// 在命令行 输入  “PRODUCTION=1 webpack --progress” 就会打包压缩，并且注入md5戳 到 d.html里面
+var webpack = require('webpack')
+var plugins = []
+var devtool = false  // 是否开启source-map
+if (process.env.PRODUCTION) {
+    // 压缩
+    plugins.push(new webpack.optimize.UglifyJsPlugin({
+        compress: {
+            warnings: false,
+            drop_debugger: true,
+            drop_console: true,
+        }
+    }))
+    devtool = '#source-map'   // 生产环境不开启source-map
+} else {
+    devtool = '#eval-source-map'
+}
 
 module.exports = {
     entry: {
@@ -61,4 +76,6 @@ module.exports = {
             })
         ]
     },
+    plugins: plugins,
+    devtool: devtool,
 }
