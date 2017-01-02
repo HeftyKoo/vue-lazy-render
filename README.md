@@ -51,6 +51,10 @@ Vue组件,用于Vue组件的延迟渲染,改善初次进入页面或者数据量
     <lazy-render :data="myArray" :time="300" :limit="50" track-by-data>
         <my-component :data="myArray"></my-component>
     </lazy-render>
+    
+## Development
+
+    npm run dev
 
 ## License
 
