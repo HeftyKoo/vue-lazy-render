@@ -1,12 +1,15 @@
 {
   "name": "vue-lazy-render",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "lazy render component from vue",
   "main": "dist/build.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "mb": "export PRODUCTION=1 && webpack --progress --hide-modules",
-    "wb": "set PRODUCTION=1 && webpack --progress --hide-modules"
+    "wb": "set PRODUCTION=1 && webpack --progress --hide-modules",
+    "dev": "webpack-dev-server --progress --profile --colors --inline",
+    "port": "webpack-dev-server --progress --colors --inline --port 9090 ",
+    "ip": "webpack-dev-server --progress --profile --colors --inline --host=192.168.88.106  --port 9000"
   },
   "repository": {
     "type": "git",
