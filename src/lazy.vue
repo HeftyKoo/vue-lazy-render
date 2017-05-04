@@ -5,7 +5,7 @@
     </div>
 </template>
 
-<style rel="stylesheet/less" lang="less" scoped>
+<style scoped>
     .lazy-load {
         position: relative;
         width: 100%;
