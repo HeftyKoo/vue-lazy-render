@@ -1,6 +1,6 @@
 {
   "name": "vue-lazy-render",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "lazy render component from vue",
   "main": "dist/build.js",
   "scripts": {
@@ -32,14 +32,13 @@
     "babel-preset-stage-2": "^6.18.0",
     "babel-runtime": "^6.18.0",
     "css-loader": "^0.25.0",
-    "less": "^2.7.1",
-    "less-loader": "^2.2.3",
     "postcss-loader": "^1.1.1",
     "style-loader": "^0.13.1",
-    "vue-hot-reload-api": "^2.0.6",
-    "vue-html-loader": "^1.2.3",
-    "vue-loader": "^9.9.5",
+    "vue-hot-reload-api": "^2.1.0",
+    "vue-html-loader": "^1.2.4",
+    "vue-loader": "^12.0.3",
     "vue-style-loader": "^1.0.0",
+    "vue-template-compiler": "^2.3.2",
     "webpack": "^1.13.3"
   },
   "author": {
