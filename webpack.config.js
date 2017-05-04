@@ -57,12 +57,7 @@ module.exports = {
                 test: /\.css/,
                 exclude: /node_modules$/,
                 loader: "style-loader!css-loader!autoprefixer-loader?{ browsers: ['last 100 versions'] }!"
-            },
-            {
-                test: /\.less/,
-                exclude: /^node_modules$/,
-                loader: "style-loader!css-loader!autoprefixer-loader?{ browsers: ['last 100 versions'] }!less-loader"
-            },
+            }
         ]
     },
     babel: {
