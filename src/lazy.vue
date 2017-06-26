@@ -1,7 +1,9 @@
 <template>
     <div class="lazy-load">
         <slot v-if="show"></slot>
-        <div v-if="!show" :class="[maskClass ? maskClass : 'lazy-load-mask']">{{tip}}</div>
+        <slot name="tip" v-if="!show">
+            <div :class="[maskClass ? maskClass : 'lazy-load-mask']" v-html="tip"></div>
+        </slot>
     </div>
 </template>
 
