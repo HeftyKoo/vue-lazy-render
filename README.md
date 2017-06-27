@@ -32,7 +32,7 @@ Vue组件,用于Vue组件的延迟渲染,改善初次进入页面或者数据量
 |trackByData|是否根据data的变化来开启延迟加载,如果设为true,需将data prop进来,并且路由切换时不会再进行延迟渲染|Boolean|--|false|
 |limit|在数据超过多少后才开启延迟渲染,需要data和将trackByData设为true|Number|30|false|
 |maskClass|等待渲染时的遮罩层样式|String|--|false|
-|tip|等待渲染时的提示文字|String|正在渲染,请稍候|false|
+|tip|等待渲染时的提示文字(支持直接写html)|String|正在渲染,请稍候|false|
 
 ## Events
 | name      | description |params|
@@ -52,6 +52,12 @@ Vue组件,用于Vue组件的延迟渲染,改善初次进入页面或者数据量
         <my-component :data="myArray"></my-component>
     </lazy-render>
     
+### tip slot
+    <lazy-render>
+        <my-component></my-component>
+        <div slot="tip">this is a tip</div>
+    </lazy-render>  
+  
 ## Development
 
     npm run dev
