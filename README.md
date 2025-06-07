@@ -66,4 +66,9 @@ Vue组件,用于Vue组件的延迟渲染,改善初次进入页面或者数据量
 
 [MIT](https://opensource.org/licenses/MIT)
 
+## 🏢 Sponsors
+
+Thank you to the following sponsors for supporting the development of XUGOU:
+
+[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
 
